@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { useEffect, useState } from 'react'
 
@@ -10,7 +10,9 @@ import { sepolia } from 'wagmi/chains'
 export const wagmiConfig = createConfig({
   chains: [sepolia],
   transports: {
-    [sepolia.id]: http('https://api.zan.top/node/v1/eth/sepolia/public'),
+    [sepolia.id]: http(
+      "https://eth-sepolia.g.alchemy.com/v2/dW5cSxDHKugtv5NxLTYyah8OLll0gn5q"
+    ),
   },
 })
 
