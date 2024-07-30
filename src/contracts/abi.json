@@ -1,0 +1,52 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "player",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum RockPaperScissors.Choice",
+        "name": "playerChoice",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum RockPaperScissors.Choice",
+        "name": "contractChoice",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum RockPaperScissors.Result",
+        "name": "result",
+        "type": "uint8"
+      }
+    ],
+    "name": "GamePlayed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum RockPaperScissors.Choice",
+        "name": "_playerChoice",
+        "type": "uint8"
+      }
+    ],
+    "name": "play",
+    "outputs": [
+      {
+        "internalType": "enum RockPaperScissors.Result",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
